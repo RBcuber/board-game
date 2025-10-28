@@ -18,7 +18,7 @@ export default function FAQ() {
         And for the bravest — we regularly host live Dungeons & Dragons sessions
         with custom campaigns, atmospheric stories, and unforgettable moments.
       </p>
-      <p>
+      <p >
         Whether you’re here for fun, storytelling, or tactical challenges —
         welcome to our community of dice, imagination, and good company. 🎲✨
       </p>

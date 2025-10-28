@@ -4,6 +4,12 @@ export default function Header() {
   return (
     <header className="bg-white border-b border-gray-200 shadow-sm">
       <nav className="max-w-5xl mx-auto flex justify-center gap-6 px-6 py-3 text-gray-700">
+         <Link
+          href="/"
+          className="hover:text-blue-600 transition-colors duration-200"
+        >
+          Home
+        </Link>
         <Link
           href="/blog"
           className="hover:text-blue-600 transition-colors duration-200"
