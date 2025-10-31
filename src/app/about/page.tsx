@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-6 bg-amber-200 h-lvh">
+    <div className="p-6 bg-accent h-lvh">
       <h2 className="mx-6 my-10 font-extrabold text-3xl">About us</h2>
       <p>
         Imagine a multi-platform digital environment with instant access to

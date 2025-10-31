@@ -1,9 +1,11 @@
 export default function FAQ() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-8 text-gray-800">
+    <div className="min-h-lvh mx-auto px-6 py-8 text-gray-800 bg-pink dark:text-white" >
       <h2 className="text-2xl font-semibold mb-4">General</h2>
 
-      <h3 className="text-xl font-semibold mb-2">What is our Board Game Hub?</h3>
+      <h3 className="text-xl font-semibold mb-2">
+        What is our Board Game Hub?
+      </h3>
       <p className="mb-3">
         Our platform brings together everyone who loves board games — from
         casual players to true enthusiasts. You’ll find hundreds of tabletop
@@ -18,10 +20,11 @@ export default function FAQ() {
         And for the bravest — we regularly host live Dungeons & Dragons sessions
         with custom campaigns, atmospheric stories, and unforgettable moments.
       </p>
-      <p >
+      <p>
         Whether you’re here for fun, storytelling, or tactical challenges —
         welcome to our community of dice, imagination, and good company. 🎲✨
       </p>
+   
     </div>
   );
 }
