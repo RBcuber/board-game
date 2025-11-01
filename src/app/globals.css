@@ -3,25 +3,41 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfaf8;
+  --foreground: #101010;
   --accent: #fee685;
+  --border: #c5c4c2;
+  --secondary: #a09674;
   --pink: #e256cb;
+  --highlight: #b78300;
+  --muted: #6b6b6b;
 }
+
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #101010;
+  --foreground: #fbfaf8;
   --accent: #746529;
+  --border: #c5c4c2;
+  --secondary: #cbbe95;
   --pink: #7e226f;
+  --highlight: #f0c14b;
+  --muted: #c0c0c0;
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-pink: var(--pink);
+  --color-border: var(--border);
+  --color-secondary: var(--secondary);
+  --color-highlight: var(--highlight);
+  --color-muted: var(--muted);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 
 body {
   background: var(--background);

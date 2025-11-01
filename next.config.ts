@@ -1,9 +1,24 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
   images: {
-    remotePatterns: [new URL("https://cdn.dummyjson.com/**")],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.dummyjson.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "f.tabletopia.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.catan.de",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

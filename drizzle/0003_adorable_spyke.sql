@@ -1,0 +1,1 @@
+ALTER TABLE "game_details" DROP COLUMN "price";
