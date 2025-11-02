@@ -43,6 +43,13 @@
       "when": 1762025087495,
       "tag": "0005_colossal_namor",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1762109963791,
+      "tag": "0006_kind_blue_shield",
+      "breakpoints": true
     }
   ]
 }
