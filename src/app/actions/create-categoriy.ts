@@ -11,5 +11,5 @@ export async function createCategory(formData: FormData) {
     
     await db.insert(gameTable).values({title, description});
     revalidatePath("/playground/all-games")
-    redirect('/playground/all-games')
+    redirect("/playground/all-games")
 }

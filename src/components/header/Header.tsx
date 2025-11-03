@@ -16,7 +16,6 @@ export default function Header() {
           </div>
 
           <nav className="flex items-center space-x-6">
-            
             <Link
               href="/blog"
               className="text-foreground hover:text-pink transition-colors duration-200"
@@ -58,6 +57,18 @@ export default function Header() {
               className="text-foreground hover:text-pink transition-colors duration-200"
             >
               Products
+            </Link>
+            <Link
+              href="/events"
+              className="text-foreground hover:text-pink transition-colors duration-200"
+            >
+              Events
+            </Link>
+            <Link
+              href="/events/new-events"
+              className="text-foreground hover:text-pink transition-colors duration-200"
+            >
+              CreateEvents
             </Link>
           </nav>
 

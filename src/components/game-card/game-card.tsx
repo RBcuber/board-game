@@ -1,4 +1,3 @@
-
 import { GamesFilter } from "@/types/GamesFilter";
 import Image from "next/image";
 import Link from "next/link";

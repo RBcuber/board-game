@@ -50,6 +50,20 @@
       "when": 1762109963791,
       "tag": "0006_kind_blue_shield",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1762164209883,
+      "tag": "0007_equal_human_fly",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1762165860126,
+      "tag": "0008_dear_rattler",
+      "breakpoints": true
     }
   ]
 }

@@ -15,8 +15,8 @@ export async function GET(req: NextRequest) {
 
   if (category) conditions.push(eq(categoriesTable.name, category));
   if (minAge) conditions.push(gte(gameDetailsTable.minAge, Number(minAge)));
-  if (maxPlayers) conditions.push(lte(gameDetailsTable.maxPlayers, Number(maxPlayers)));
-  if (minPlayers) conditions.push(gte(gameDetailsTable.minPlayers, Number(minPlayers)));
+  if (maxPlayers) conditions.push(gte(gameDetailsTable.maxPlayers, Number(maxPlayers)));
+  if (minPlayers) conditions.push(lte(gameDetailsTable.minPlayers, Number(minPlayers)));
   if (duration) conditions.push(lte(gameDetailsTable.durationMax, Number(duration)));
 
   const whereClause = conditions.length > 0 ? and(...conditions) : undefined;

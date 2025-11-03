@@ -1,4 +1,11 @@
-import { pgTable, integer, varchar, numeric } from "drizzle-orm/pg-core";
+import {
+  pgTable,
+  integer,
+  varchar,
+  numeric,
+  date,
+  text,
+} from "drizzle-orm/pg-core";
 
 export const gameTable = pgTable("games", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
@@ -22,10 +29,21 @@ export const gameDetailsTable = pgTable("game_details", {
 
 export const categoriesTable = pgTable("categories", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  name: varchar(("name"), { length: 255 }).notNull().unique(),
+  name: varchar("name", { length: 255 }).notNull().unique(),
 });
 
 export const gameCategoriesTable = pgTable("game_categories", {
-  gameId: integer("game_id").references(() => gameTable.id).notNull(),
-  categoriesId: integer("categories_id").references(() => categoriesTable.id).notNull(),
+  gameId: integer("game_id")
+    .references(() => gameTable.id)
+    .notNull(),
+  categoriesId: integer("categories_id")
+    .references(() => categoriesTable.id)
+    .notNull(),
+});
+
+export const events = pgTable("events", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  name: varchar({ length: 255 }).notNull(),
+  description: text().notNull(),
+  date: date("date"),
 });
