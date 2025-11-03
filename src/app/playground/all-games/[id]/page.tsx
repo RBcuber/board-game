@@ -21,7 +21,7 @@ export default async function GamePage({
   const g = game[0]?.games;
   const d = game[0]?.game_details;
 
-  if (!g) return <p className="text-center mt-10">Игра не найдена 😢</p>;
+  if (!g) return <p className="text-center mt-10">Игра не найдена</p>;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-10 bg-background text-foreground">

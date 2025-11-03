@@ -16,14 +16,16 @@ const eventInsertSchema = z.object({
     .string()
     .min(3, "Min lenght must be more than 3")
     .max(250, "Description  is too long, must be under 250")
-    .trim()
+    .trim(),
+  date: z.iso.date(),
 });
 
 export default async function CreateEvents(formData: FormData) {
   const name = formData.get("name");
   const description = formData.get("description");
+  const date = formData.get("date");
 
-  const newEvent = eventInsertSchema.parse({ name, description });
+  const newEvent = eventInsertSchema.parse({ date, name, description });
 
   await db.insert(events).values(newEvent);
   revalidatePath("/events");

@@ -47,6 +47,20 @@ const Page = () => {
             required
           />
         </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="date" className="text-sm font-semibold text-foreground/80">
+          Date
+        </label>
+        <input
+          type="date"
+          id="date" 
+          name="date"
+          className="p-3 rounded-lg border border-border bg-background 
+                     text-foreground focus:outline-none focus:ring-2 
+                     focus:ring-accent transition-all duration-200"
+          required
+        />
+      </div>
         <button
           type="submit"
           className="mt-4 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500 
